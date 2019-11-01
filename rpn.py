@@ -1,14 +1,10 @@
 #!/usr/bin/env python3
+import operator
 
-def add(a,b):
-	return a+b
-
-def sub(a,b):
-	return a-b
 
 operators={
-	'+':add,
-	'-':sub,
+	'+':operator.add,
+	'-':operator.sub,
 }
 
 def calculate(arg):
